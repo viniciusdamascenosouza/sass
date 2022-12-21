@@ -1,0 +1,56 @@
+@import '../abstract/variaveis';
+
+#cupom{
+    padding: 4rem;
+    background: $cor-terciaria;
+    border: 1px $cor-secundaria solid;
+    text-align: center;
+    
+    .texto{
+        color: $cor-primaria;
+
+        h2{
+            margin: 1.2rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+
+    .inscricao{
+
+        button{
+            border-style: none;
+            width: 90px;
+            height: 23px;
+            background-color: $cor-primaria;
+            border: 1px solid $cor-secundaria;
+            color: white;
+            margin-top: 1.1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: 200ms;
+            &:hover{
+                background-color: $cor-secundaria;
+                border: 1px solid $cor-primaria;
+            }
+        }
+    }
+    .input{
+        margin: 0 auto;
+        width: 575px;
+        border: 1px solid white;
+        background: white;
+
+        input{
+            height: 25px;
+            outline: none;
+            text-align: center;
+            font-size: 15px;
+            width: 566px;
+            border: none;
+        }
+        &:hover, &:focus-within{
+            box-shadow: 1px 1px 1px 1px $cor-primaria;
+        }
+    }  
+}
